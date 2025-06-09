@@ -62,7 +62,6 @@ def match_icp(icp_data, companies):
                 score = 0
                 explanation = f"Could not analyze: {parse_error}"
 
-            # Add ICP data to company
             enriched_company = company.copy()
             enriched_company.update({
                 'company_size': icp_data['company_size'],
@@ -80,7 +79,6 @@ def match_icp(icp_data, companies):
             print(f"Error processing {company_name}: {e}")
             continue
 
-    # Sort by score (highest first)
     matched_companies.sort(key=lambda x: x['icp_score'], reverse=True)
 
     return matched_companies

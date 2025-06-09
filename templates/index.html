@@ -11,7 +11,6 @@
         <div class="bg-white shadow-lg rounded-lg p-6">
             <h1 class="text-3xl font-bold text-center mb-8 text-blue-600">Lead Generation Tool</h1>
             
-            <!-- Error Message -->
             {% if error %}
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
                 {{ error }}
@@ -39,7 +38,6 @@
             </div>
             {% endif %}
 
-            <!-- Scraped State: Show scraped companies -->
             {% if state == 'scraped' and scraped_data %}
             <div>
                 <h2 class="text-xl font-semibold mb-4">Scraped Companies ({{ scraped_data|length }})</h2>
@@ -90,7 +88,6 @@
             </div>
             {% endif %}
 
-            <!-- ICP Form State -->
             {% if state == 'icp_form' %}
             <div class="max-w-2xl mx-auto">
                 <h2 class="text-xl font-semibold mb-4">Ideal Customer Profile</h2>
@@ -187,7 +184,6 @@
             </div>
             {% endif %}
 
-            <!-- Summary Loop State -->
             {% if state == 'summary_loop' %}
             <div class="max-w-md mx-auto">
                 <h2 class="text-xl font-semibold mb-4">Company Summary</h2>
@@ -205,7 +201,6 @@
             </div>
             {% endif %}
 
-            <!-- Display Summaries -->
             {% if summaries %}
             <div class="mt-8">
                 <h3 class="text-lg font-semibold mb-4">Company Summaries</h3>
@@ -216,7 +211,6 @@
                 </div>
                 {% endfor %}
                 
-                <!-- Download summaries option -->
                 <div class="mt-4">
                     <form method="post">
                         <input type="hidden" name="action" value="download_summaries">
@@ -228,7 +222,6 @@
             </div>
             {% endif %}
 
-            <!-- Complete State -->
             {% if state == 'complete' %}
             <div class="text-center">
                 <h2 class="text-xl font-semibold mb-4">Process Complete!</h2>
@@ -249,7 +242,6 @@
             </div>
             {% endif %}
 
-            <!-- Progress Indicator -->
             {% if state != 'start' and state != 'complete' %}
             <div class="mt-8 text-center">
                 <div class="flex justify-center items-center space-x-2">
@@ -271,7 +263,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="text-center text-gray-600 text-sm py-4">
         <p>&copy; 2025 Chinmay Patel</p>
     </footer>

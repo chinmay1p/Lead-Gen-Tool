@@ -2,7 +2,9 @@
 
 A full-stack AI-powered lead generation assistant that scrapes company data from YellowPages, matches Ideal Customer Profile (ICP), and generates summaries using Gemini. Built with Flask + LangGraph + Gemini + Selenium.
 
-### Video - https://drive.google.com/file/d/1Yo8ft0vwSXMPrYEfgm9vEWWYEAf70dje/view?usp=sharing
+### Video & Overview Document
+
+https://drive.google.com/drive/folders/12PDXIDHRg8Unr4WdIk3Neu1BYgEwzVRO?usp=sharing
 
 ---
 
